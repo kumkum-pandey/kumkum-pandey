@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/homepage.css">
+    <link rel="stylesheet" href="/post1.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="nav">
+        <a href="/index.html">
+          <img src="/images/logoForNAV.png" alt="">
+        </a>
+        <ul>
+            <a href="/blog.html"><li>Blog</li></a>
+            <a href="/courses.html"><li>Courses</li></a>
+            <a href="/contact.html"><li>Contact</li></a>
+            <!-- <a href="/checkoutPAY.html"><li>Payment</li></a> -->
+            <a href="/hire.html"><li>Hire</li></a>
+            <div id="loginName" style="display: flex;"></div>
+        </ul>
+      </div>
+
+    <div id="post">
+        
+                <img src="/images/image.b1.jpg" alt="">
+                <h3>Backend Development</h3> 
+                <p>
+            Backend Development refers to server side development.It focuses on scripting,databases,website architecture.It contains behind-the scenes activities that occur when performing any action on website.
+            <br><br>
+            Back-end development refers to the development of server-side logic that powers websites and apps from behind the scenes. It includes all the code needed to build out the database, server, and application. From database migrations to API integrations to setting up the server-side technologies that make a website tick, a back-end web developer may be the talent you need to get your next web project off the ground.
+            <br><br>
+            The “traditional” back end is a mix of the server, databases, APIs, and operating systems that power an app’s front end. For an in-depth look at the software that ties it all together, read our article on Server-Side Scripting. The back end of applications can look very different from application to application, whether it’s the use of cloud-based servers and data warehouses, containerization with a service like Docker, Backend-as-a-Service (BaaS) providers, or APIs to replace more complex processing.
+            <br><br>
+            Back-end languages will differ in file size, performance, compatibility, how many lines of code required, and the style of programming. Some back-end scripting languages are object-oriented programming languages, a style of programming that bundles attributes and functions within objects. Other languages may be compiled rather than interpreted, something that affects load time, readability, and processing power required to run the application.
+            <br><br>
+            C++ combines all the features of C with object-oriented programming features such as classes. As a low-level programming language it is used to communicate efficiently with system hardware for better performance. This makes it ideal for video games, large web applications, and other use-cases where system-level performance is a premium.
+            <br>
+            C# is the language of choice for Windows servers and environments. If your technology stack is based off of Microsoft products such as ASP.NET, chances are high C# will be the most productive choice for your developers.
+            <br>
+            Java is a general purpose object-oriented programming language that was designed with cross-platform compatibility in mind. Any machine running an installation of the Java Virtual Machine (JVM) can execute Java programs.
+            <br>
+            While traditionally considered a front-end scripting language, the introduction of Node.js showed the world that this general-purpose object-oriented programming language could also be used on the server-side of applications. As one of the core technologies of the web, JavaScript is now a popular choice for front-end and back-end web development.
+            <br>
+            PHP is the most popular back-end language for the web. PHP has a low learning curve and the benefit of a massive codebase and long history of open-source developer community support for using PHP on the back end of websites. If you’ve ever set up a personal website with WordPress, PHP was powering the back end from behind the scenes.
+            <br>
+                </p>
+           
+    </div>
+    <script>
+        let loginName =document.getElementById("loginName");
+        let data =JSON.parse(localStorage.getItem("username"))||"";
+        data ==""? loginName.innerHTML=`<a href="/Login.html"><li>Login</li></a>`: loginName.innerHTML=`<li>${data.substring(0,6)}</li><li id="logout">Log Out</li>`
+        let  logout =document.getElementById("logout");
+        logout.addEventListener("click",()=>{
+          localStorage.removeItem("username");
+          location.reload();
+        })
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             
+    
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="/viewCoursePage.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="nav">
+        <a href="/index.html">
+          <img src="/images/logoForNAV.png" alt="">
+        </a>
+        <ul>
+            <a href="/blog.html"><li>Blog</li></a>
+            <a href="/courses.html"><li>Courses</li></a>
+            <a href="/contact.html"><li>Contact</li></a>
+            <!-- <a href="/checkoutPAY.html"><li>Payment</li></a> -->
+            <a href="/hire.html"><li>Hire</li></a>
+            <div id="loginName" style="display: flex;"></div>
+        </ul>
+      </div>
+
+           <div id="mid">
+            <div id="CourseInfo">
+                <div id="imgdiv" ><img src="" id="left" alt=""></div>
+                <div id="right"></div>
+               </div>
+    
+               <div id="ExtraInfo">
+                <h2>Extra Info</h2>
+                <p id="paragraph"></p>
+               </div>
+               
+           </div>
+
+            <!-- footer/////////////////////////////////////////////////////////////////// -->
+    <div id="bottom2">
+        <!-- left part -->
+        <div id="left">
+            <div>
+                <ul>
+                    <p><b>Company</b></p>
+                    <p>About Us</p>
+                    <p>Blog</p>
+                    <p>Policy</p>
+                    <p>Universal Fine Print</p>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <p><b>Help</b></p>
+                    <p>Contact Us</p>
+                    <p>Sitemap</p>
+                </ul>
+            </div>
+        </div>
+        <div id="right">
+            <p><b>Download app</b></p>
+            <div>
+                
+                    <img src="https://res4.nbstatic.in/static/images/google-play-badges.svg" alt="">
+                    <img src="https://res4.nbstatic.in/static/images/app-store.svg" alt="">
+                
+            </div>
+            <p>Customer Care: +91-7303390416 - 11 AM to 8 PM (MON - SUN)</p>
+        </div>
+    </div>
+    <p>Copyright © nearbuy.com India Private Limited. All rights reserved.</p>
+        <p>v 3.0.0</p>
+</body>
+</html>
+<script src="/js/viewCoursePage.js"></script>
+<script>
+    let loginName =document.getElementById("loginName");
+    let data =JSON.parse(localStorage.getItem("username"))||"";
+    data ==""? loginName.innerHTML=`<a href="/Login.html"><li>Login</li></a>`: loginName.innerHTML=`<li>${data.substring(0,6)}</li><li id="logout">Log Out</li>`
+    let  logout =document.getElementById("logout");
+    logout.addEventListener("click",()=>{
+      localStorage.removeItem("username");
+      location.reload();
+    })
+  </script>

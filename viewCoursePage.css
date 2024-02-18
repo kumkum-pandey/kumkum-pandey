@@ -1,0 +1,47 @@
+*{
+    font-family: 'poppins',sans-serif;
+}
+
+#mid{
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+#CourseInfo{
+    margin-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+
+}
+#imgdiv{
+    width: 900px;
+}
+#CourseInfo img{
+    width:850px;
+    height: 500px;
+}
+#mid img{
+    border-radius: 40px;
+}
+/* #p{
+    font-size:larger ;
+} */
+
+button{
+    padding: 10px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #b854f2;
+    color: white;
+}
+#paragraph{
+    font-size: larger;
+}
+.btn:hover{
+    opacity: 0.8px;
+    background-color: red;
+
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/homepage.css">
+    <link rel="stylesheet" href="/hire.css">
+    <title>Enroll form</title>
+</head>
+<body>
+    <div id="nav">
+        <a href="/index.html">
+          <img src="/images/logoForNAV.png" alt="">
+        </a>
+        <ul>
+            <a href="/blog.html"><li>Blog</li></a>
+            <a href="/courses.html"><li>Courses</li></a>
+            <a href="/contact.html"><li>Contact</li></a>
+            <!-- <a href="/checkoutPAY.html"><li>Payment</li></a> -->
+            <a href="/hire.html"><li>Hire</li></a>
+            <div id="loginName" style="display: flex;"></div>
+        </ul>
+      </div>
+    <div class="box">                                      
+        
+        <div class="Hire">
+        
+            <h1 style="display: flex;">WE ARE HIRING!</h1>
+        <p>We are looking for freelance Developers, Subtitle writers, Content writers and Video editors. If you think you are fit for the role. Submit the form. Make sure you have a valid email so we can contact you back in case your application gets selected. Cheers!
+
+        </p>
+        
+    </div>
+    <div class="container">
+
+        <h1>Apply Now</h1>
+        <input type="Applicant Name" placeholder="Name" class="input" id="name" required >
+        <!--  -->
+    
+        <input type="Email" placeholder="email" class="input" id="email" required >
+            <!--  -->
+    
+            <input type="Phone number" placeholder="number" class="input" id="num" required >
+                <!--  -->
+    
+                <input type="Resume" placeholder="Link to your Resume" class="input" id="Resume" required >
+                    <!--  -->
+                    <h2>skill:</h2>
+             <div id="skills">
+                <label ><input type="checkbox" value="Subtitle writer" class="checkboxex">Subtitle writer</label>
+                <label ><input type="checkbox" value="Python " class="checkboxex">Python</label>
+                <label ><input type="checkbox" value="Content Writer" class="checkboxex">Content Writer</label>
+                <label ><input type="checkbox" value="PHP" class="checkboxex">PHP</label>
+                <label ><input type="checkbox" value="Video Editor" class="checkboxex">Video Editor</label>
+                <label ><input type="checkbox" value="JavaScript" class="checkboxex">JavaScript</label>
+                <label ><input type="checkbox" value="Java" class="checkboxex">Java</label>
+                <label ><input type="checkbox" value="C++" class="checkboxex">C++</label>
+                </div>
+                <button type="submit" id="Enroll">Submit</button>      
+    
+    </a>
+        </b>
+    </div>
+</div>
+
+    
+</body>
+<script src="/js/hire.js"></script>
+<script>
+    let loginName =document.getElementById("loginName");
+    let data =JSON.parse(localStorage.getItem("username"))||"";
+    data ==""? loginName.innerHTML=`<a href="/Login.html"><li>Login</li></a>`: loginName.innerHTML=`<li>${data.substring(0,6)}</li><li id="logout">Log Out</li>`
+    let  logout =document.getElementById("logout");
+    logout.addEventListener("click",()=>{
+      localStorage.removeItem("username");
+      location.reload();
+    })
+  </script>
+</html>

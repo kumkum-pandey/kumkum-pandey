@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/homepage.css">
+    <link rel="stylesheet" href="/blog.css">
+    
+    <title>Document</title>
+</head>
+<body>
+ <!-- header ////////////////////////////////////////////////////////////////////-->
+ <div id="nav">
+    <a href="/index.html">
+    <img src="/images/logoForNAV.png" alt="" sizes="" srcset="">
+    </a>
+    <ul>
+        <a href="/blog.html"><li>Blog</li></a>
+        <a href="/courses.html"><li>Courses</li></a>
+        <a href="/contact.html"><li>Contact</li></a>
+        <!-- <a href="/checkoutPAY.html"><li>Payment</li></a> -->
+        <a href="/hire.html"><li>Hire</li></a>
+        <div id="loginName" style="display: flex;"></div>
+    </ul>
+</div> 
+<!-- header ////////////////////////////////////////////////////////////////////-->
+    
+     <h2>Blog</h2> 
+<div id="blog-container">
+    <div class="blogs">
+        <div class="posts">
+            
+            <img src="/images/image.b2.jpg" alt="">
+            <h3>Why Is Computer Learning So Important In 2023?
+            </h3>
+            <p>In today’s world, every student in schools everywhere is learning how electricity works, how to prove a primary theorem, how to dissect a frog. That does not mean they want to become electricians, mathematicians, or biologists. Not every child chooses to pursue those careers. These subjects are taught so that students learn how the world works around them. 
+
+                In the same way modern-day kids also need to understand what an computer algorithm is and how the internet works. </p>
+                <a href="/post.html">Read More</a>
+        </div>
+        <div class="posts">
+            <img src="/images/b4.jpeg" alt="/images/">
+            <h3>Web Development
+            </h3>
+            <p> Web Development, also known as Web Programming, is a creation of dynamic web applications. Broadly, it is a term for the work involved in developing a website for the internet or the intranet. A few examples include the social networking sites like Facebook, Twitter, Instagram, etc. or e-commerce platforms like Amazon, Flipkart and eBay.
+            </p>
+                
+        </div>
+        <div class="posts">
+            <img src="/images/image b7.jpeg" alt="">
+            <h3>Frontend Development
+            </h3>
+            <p>Everything you see on a website, like buttons, links, animations, and more, were created by a front end web developer. It is the front end developer's job to take the vision and design concept from the client and implement it through code.
+
+            </p>
+                <a href="/post2.html">Read More</a>
+        </div>
+        <div class="posts">
+            <img src="/images/backend.jpg" alt="">
+            <h3>Backend Development
+            </h3>
+            <p>Backend Development refers to server side development.It focuses on scripting,databases,website architecture.It contains behind-the scenes activities that occur when performing any action on website.
+            </p>
+                <a href="/post3.html">Read More</a>
+        </div>
+        <div class="posts">
+            <img src="/images/image b6.png" alt="">
+            <h3>Data Analyst
+            </h3>
+            <p>A data analyst is a person whose job is to gather and interpret data in order to solve a specific problem. The role includes plenty of time spent with data but entails communicating findings too. 
+             </p>
+                <a href="/post4.html">Read More</a>
+        </div>
+    </div>
+    <div class="Cate">
+        <h2>Categories</h2>
+        <hr>
+        <a href="#">Importance of Computer Learning</a>
+        <hr>
+        <a href="#">Web Development</a>
+        <hr>
+        <a href="#">Frontend Development</a>
+        <hr>
+        <a href="#">Backend Dvelopment</a>
+        <hr>
+        <a href="#">Data Analyst</a>
+    </div>
+</div>
+
+<div id="bottom2">
+    <!-- left part -->
+    <div id="left">
+        <div>
+            <ul>
+                <p><b>Company</b></p>
+                <p>About Us</p>
+                <p>Blog</p>
+                <p>Policy</p>
+                <p>Universal Fine Print</p>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <p><b>Help</b></p>
+                <p>Contact Us</p>
+                <p>Sitemap</p>
+            </ul>
+        </div>
+    </div>
+    <div id="right">
+        <p><b>Download app</b></p>
+        <div>
+            
+                <img src="https://res4.nbstatic.in/static/images/google-play-badges.svg" alt="">
+                <img src="https://res4.nbstatic.in/static/images/app-store.svg" alt="">
+            
+        </div>
+        <p>Customer Care: +91-7303390416 - 11 AM to 8 PM (MON - SUN)</p>
+    </div>
+</div>
+<p>Copyright © nearbuy.com India Private Limited. All rights reserved.</p>
+    <p>v 3.0.0</p>
+<!-- ////////////////////////////////////////////////////////////////////////////////-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script>
+    let loginName =document.getElementById("loginName");
+    let data =JSON.parse(localStorage.getItem("username"))||"";
+    data ==""? loginName.innerHTML=`<a href="/Login.html"><li>Login</li></a>`: loginName.innerHTML=`<li>${data.substring(0,6)}</li><li id="logout">Log Out</li>`
+    let  logout =document.getElementById("logout");
+    logout.addEventListener("click",()=>{
+      localStorage.removeItem("username");
+      location.reload();
+    })
+  </script>
+
+</body>
+</html> 

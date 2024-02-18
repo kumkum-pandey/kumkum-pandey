@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/homepage.css">
+    <link rel="stylesheet" href="/post1.css">
+    <title>Document</title>
+</head>
+<div id="nav">
+    <img src="/images/logoForNAV.png" alt="">
+    <ul>
+        <a href="/blog.html"><li>Blog</li></a>
+        <a href="/courses.html"><li>Courses</li></a>
+        <a href="/contact.html"><li>Contact</li></a>
+        <!-- <a href="/checkoutPAY.html"><li>Payment</li></a> -->
+        <a href="/hire.html"><li>Hire</li></a>
+        <div id="loginName" style="display: flex;"></div>
+    </ul>
+</div>
+
+<body>
+            <div id="post">
+                <img src="/images/image b7.jpeg" alt="">
+                <h3>Frontend Development</h3> 
+                <p>
+                Everything you see on a website, like buttons, links, animations, and more, were created by a front end web developer. It is the front end developer's job to take the vision and design concept from the client and implement it through code.
+                <br><br>
+                Front-end developers create user interfaces (UI). UI is the graphical layout of an application that determines what each part of a site or application does and how it will look. "I've always found crafting polished user interactions that surprise and delight users to be the most rewarding and engaging task," says Mari Batilando, a software engineer at Meta. "In order to do this, you need to both have an eye for detail and a rock-solid understanding of the platform."
+                <br><br>
+                Everything on the page from the logo to the search bar, buttons, overall layout and how the user interacts with the page was created by a front end developer. Front end developers are in charge of the look and feel of the website.
+                Front end developers also have to make sure the website looks good on all devices (phones, tablets, and computer screens).
+                <br><br>
+                The three main languages you need to know well are HTML, CSS, and JavaScript. From there you can focus on frameworks, libraries, and other useful tools.
+                <br><br>
+                HTML stands for HyperText Markup Language. HTML displays the content on the page like buttons, links, headings, paragraphs, and lists.
+
+              You should not use HTML for styling. That is what CSS is for.
+
+            I would suggest going through the freeCodeCamp HTML challenges to start learning the basics.
+      <br>
+     CSS stands for Cascading Style Sheets. CSS is responsible for the style of your web page including colors, layouts, and animations.
+
+freeCodeCamp's Responsive Web Design Course will teach you the basics of CSS, responsive design and accessibility. Responsive design is essential in creating websites that look good on all devices.
+
+Accessibility is the practice of making sure that everyone can easily use your web sites. You do not want to create web sites that cannot be used by those with assistive technologies like screen readers.
+
+After completing the course, you will be able to starting building small web pages.
+<br>
+JavaScript allows users to interact with the web page. Examples of JavaScript can be found in virtually any web page including the freeCodeCamp homepage.
+
+For example, when I click on the Menu button at the top of the page, it will open a dropdown list of options. Every time I click on that button, it will toggle back and forth between opening and closing the Menu.
+
+JavaScript can be used in online games, web pages, mobile applications and more.
+
+To start learning JavaScript, you can take freeCodeCamp's JavaScript Algorithms and Data Structures course. From there, you can start building projects from my 40 JavaScript Projects for Beginners.
+<br>
+Once you learn the basics of CSS, then you can start to work with different frameworks and libraries. These tools were created as a way to help speed up the development process.
+
+Frameworks like Bootstrap and Tailwind CSS allow you to add the catalog of classes to your webpage. As a result, you end up with professional and mobile-friendly designs.  
+
+There are dozens of options on the market and you don't need to learn them all. It's often helpful to look at jobs in your area and see what technologies they're using. Then you can focus on the most common/in-demand skills.
+</p>
+</div>
+        
+    
+    <div id="bottom2">
+        <!-- left part -->
+        <div id="left">
+            <div>
+                <ul>
+                    <p><b>Company</b></p>
+                    <p>About Us</p>
+                    <p>Blog</p>
+                    <p>Policy</p>
+                    <p>Universal Fine Print</p>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <p><b>Help</b></p>
+                    <p>Contact Us</p>
+                    <p>Sitemap</p>
+                </ul>
+            </div>
+        </div>
+        <div id="right">
+            <p><b>Download app</b></p>
+            <div>
+                
+                    <img src="https://res4.nbstatic.in/static/images/google-play-badges.svg" alt="">
+                    <img src="https://res4.nbstatic.in/static/images/app-store.svg" alt="">
+                
+            </div>
+            <p>Customer Care: +91-7303390416 - 11 AM to 8 PM (MON - SUN)</p>
+        </div>
+    </div>
+    <p>Copyright © nearbuy.com India Private Limited. All rights reserved.</p>
+        <p>v 3.0.0</p>
+  <!-- //////////////////////////////////////////////////////////////////////////////// -->
+  </body>
+</html>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script>
+    let loginName =document.getElementById("loginName");
+    let data =JSON.parse(localStorage.getItem("username"))||"";
+    data ==""? loginName.innerHTML=`<a href="/Login.html"><li>Login</li></a>`: loginName.innerHTML=`<li>${data.substring(0,6)}</li><li id="logout">Log Out</li>`
+    let  logout =document.getElementById("logout");
+    logout.addEventListener("click",()=>{
+      localStorage.removeItem("username");
+      location.reload();
+    })
+  </script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</body>
+</html>

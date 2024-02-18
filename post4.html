@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/homepage.css">
+    <link rel="stylesheet" href="/post1.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="nav">
+        <a href="/index.html">
+          <img src="/images/logoForNAV.png" alt="">
+        </a>
+        <ul>
+            <a href="/blog.html"><li>Blog</li></a>
+            <a href="/courses.html"><li>Courses</li></a>
+            <a href="/contact.html"><li>Contact</li></a>
+            <!-- <a href="/checkoutPAY.html"><li>Payment</li></a> -->
+            <a href="/hire.html"><li>Hire</li></a>
+            <div id="loginName" style="display: flex;"></div>
+        </ul>
+      </div>
+
+
+    <div id="post">
+        
+                <img src="/images/image b6.png" alt="">
+                <h3>Data Analystt</h3> 
+                <p>
+                    A data analyst is a person whose job is to gather and interpret data in order to solve a specific problem. The role includes plenty of time spent with data but entails communicating findings too.
+                    <br><br>
+                    A data analyst collects, cleans, and interprets data sets in order to answer a question or solve a problem. They work in many industries, including business, finance, criminal justice, science, medicine, and government.
+                    <br><br>
+                    Data analysis is the process of gleaning insights from data to inform better business decisions. The process of analyzing data typically moves through five iterative phases:
+                    <br>
+                    Identify the data you want to analyze
+
+Collect the data
+
+Clean the data in preparation for analysis
+
+Analyze the data
+
+Interpret the results of the analysis
+<br><br>
+Data analysis can take different forms, depending on the question you’re trying to answer. You can read more about the types of data analysis here. Briefly, descriptive analysis tells us what happened, diagnostic analysis tells us why it happened, predictive analytics forms projections about the future, and prescriptive analysis creates actionable advice on what actions to take.
+<br><br>
+Analytics brings together theory and practice to identify and communicate data-driven insights that allow managers, stakeholders, and other executives in an organization to make more informed decisions. Experienced data analysts consider their work in a larger context, within their organization and in consideration of a wide range of external factors. Analysts are also able to account for the competitive environment, internal and external business interests, and the absence of certain data sets in the data-based recommendations that they make to stakeholders. 
+<br><br>
+A successful data analyst possesses a combination of technical skills and leadership skills.
+
+Technical skills include knowledge of database languages such as SQL, R, or Python; spreadsheet tools such as Microsoft Excel or Google Sheets for statistical analysis; and data visualization software such as Tableau or Qlik. Mathematical and statistical skills are also valuable to help gather, measure, organize, and analyze data while using these common tools.
+                </p>
+            </div>
+            <script>
+                let loginName =document.getElementById("loginName");
+                let data =JSON.parse(localStorage.getItem("username"))||"";
+                data ==""? loginName.innerHTML=`<a href="/Login.html"><li>Login</li></a>`: loginName.innerHTML=`<li>${data.substring(0,6)}</li><li id="logout">Log Out</li>`
+                let  logout =document.getElementById("logout");
+                logout.addEventListener("click",()=>{
+                  localStorage.removeItem("username");
+                  location.reload();
+                })
+              </script>
+       
+            
+
+
+
+
+
+
+
+
+
+ 
+          
+</body>
+</html>

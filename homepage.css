@@ -1,0 +1,282 @@
+#a {
+    text-decoration: none;
+}
+:root{
+    --main-color: #b854f2;
+}
+#nav a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#nav{
+    display: flex;
+    /* justify-content:space-between; */
+    align-items: center;
+    padding-left: 7%;
+    /* padding-right: 7%; */
+    /* border: 1px solid black; */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    justify-content: space-between;
+}
+/* a{
+    text-decoration: none;
+} */
+#applynow{
+    text-decoration: none;
+}
+#nav ul{
+    display: flex;
+    margin-left: 35%;
+    margin-right: 10%;
+    /* width: 900px; */
+    /* border: 1px solid black; */
+}
+
+#nav img{
+    /* display: flex; */
+    height: 50px;
+    /* border: 1px solid black; */
+}
+#nav li{
+    list-style: none;
+    padding: 10px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    font-size: larger;
+    color: black;
+    margin-top: 5px;
+}
+
+#nav li:hover{
+    color: var(--main-color);
+}
+.SLIDES{
+    margin-top: 80px;
+}
+
+.slogan p{
+    text-align: center;
+    font-size: 50px;
+    /* padding-top: 30px; */
+    font-weight: bolder;
+    /* border: 1px solid black; */
+    line-height: 0;
+}
+.slogan :nth-child(1){
+    margin-top: 70px;
+}
+.slogan :nth-child(4){
+    margin-top: 70px;
+    padding-bottom: 10px;
+}
+.slogan span{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    line-height: 0;
+    /* border: 1px solid black; */
+}
+.slogan img{
+    display: block;
+    margin: auto;
+}
+#apply{
+    display:block;
+    margin: auto;
+    margin-top: 20px;
+    border: none;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    color: white;
+    text-decoration: none;
+}
+#salaryimages{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    /* margin-bottom: 50px; */
+    padding: 40px;
+    gap: 20px;
+    /* border: 1px solid black; */
+}
+#salaryimages img{
+       height: 300px;
+       border-radius: 20px;
+}
+
+#salaryimages :nth-child(1){
+    width: 650px;
+    /* border: 1px solid black; */
+}
+
+
+
+#courseInfo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* border: 1px solid black; */
+}
+
+.heading{
+    padding-top: 10px;
+    font-size: x-large;
+}
+
+.desc{
+    width: 370px;
+    text-align: justify;
+    /* border: 1px solid black; */
+}
+
+.info{
+    padding: 50px;
+}
+
+.info p{
+    font-size: large;
+    /* border: 1px solid black; */
+}
+
+#skilling{
+    padding: 50px;
+}
+
+#skilling p{
+    font-size: 50px;
+    font-weight: bolder;
+    /* border: 1px solid black; */
+}
+
+#skilling span{
+    font-size: large;
+}
+
+#Scholar{
+    padding: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 30px;
+    background-color: #fff9e5;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#Scholar p,span{
+    font-size: 20px;
+}
+
+#Scholar button{
+    font-size: large;
+    margin-top: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--main-color);
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+
+#Scholar :nth-child(3){
+    color: #7371cc;
+}
+
+#Scholar :nth-child(7){
+    color: #7d7d85;
+    font-size: medium;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* /footer css */
+ /* bottom lower  left */
+ #bottom2{
+    display: flex;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: black;
+    color: white;
+
+}  
+#bottom2 > #left{
+    display: flex;
+    width: 50%;
+    /* border: solid; */
+    
+    
+}   
+#bottom2 > #left  ul{
+    padding-left: 0%;
+    /* border: solid; */
+}  
+#bottom2 > #left  >:nth-child(2)> ul{
+    border-right: 1px grey solid;
+    padding-bottom: 10px;
+}
+#bottom2 > #left >div {
+    width: 50%;
+    text-align: left;
+    /* border: solid; */
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+/* bottom lower  right */
+#bottom2 > #right{
+    padding-top: 20px;
+    /* border: solid; */
+    padding-left: 7%;
+}
+#bottom2 > #right >div >:nth-child(1){
+    width: 130px;
+    height: 50px;
+    /* border: solid; */
+    
+    
+}
+#bottom2 > #right  div{
+    display: flex;
+    gap: 40px;
+    /* border: solid; */
+    margin-bottom: 50px;
+}
+#bottom2 ~ p{
+    padding-left: 15%;
+    background-color: black;
+    color: #333333;
+    margin: 0%;
+    padding-bottom: 10px;
+}
+
+
